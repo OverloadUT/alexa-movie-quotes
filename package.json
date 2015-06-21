@@ -1,0 +1,29 @@
+{
+  "name": "alexa-movie-quotes",
+  "version": "0.0.1",
+  "description": "Ask Alexa (Amazon Echo) for movie quotes, or play movie quote trivia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "invoke": "grunt lambda_invoke",
+    "deploy": "deploy.bat"
+  },
+  "author": "Greg \"OverloadUT\" Laabs <OverloadUT@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "grunt": "^0.4.5",
+    "grunt-aws-lambda": "^0.4.0",
+    "istanbul": "^0.3.15",
+    "mocha": "^2.2.5",
+    "npm": "^2.11.3",
+    "q": "^1.4.1",
+    "sleep": "^2.0.0"
+  },
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "didyoumean": "^1.2.1",
+    "dotenv": "^1.1.0",
+    "request": "^2.58.0"
+  }
+}
