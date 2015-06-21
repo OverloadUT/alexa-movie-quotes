@@ -201,7 +201,11 @@ function nextTriviaRound(responseprefix, session, callback) {
         if(sessionAttributes.gameRounds == 1) {
             gameOverResponse = "";
         } else {
-            gameOverResponse = "You scored " + sessionAttributes.correct + " correct guesses out of " + sessionAttributes.gameRounds + "rounds.";
+            var guesses = "guesses";
+            if(sessionAttributes.correct == 1){
+                guesses = "guess";
+            }
+            gameOverResponse = "You scored " + sessionAttributes.correct + " correct "+guesses+" out of " + sessionAttributes.gameRounds + " rounds.";
         }
 
         return callback(sessionAttributes,
