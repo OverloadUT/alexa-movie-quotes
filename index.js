@@ -1,5 +1,5 @@
 require('dotenv').load();
-var request = require('request');
+// var request = require('request');
 var cheerio = require('cheerio');
 var didYouMean = require('didyoumean');
 
